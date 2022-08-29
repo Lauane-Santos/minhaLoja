@@ -11,7 +11,7 @@
 
 <body>
   <!-- início menu -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(3, 88, 41);">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -24,7 +24,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="/">Link</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,12 +44,61 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn" style="background-color: rgb(240, 255, 246); color:rgb(3, 88, 41)" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
   <!-- final menu -->
+ <!-- início formulário -->
+  <div class="container">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Nome</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+     <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+    <button type="button" class="btn btn-dark">Submit</button>
+  </div>
+  <!-- final formulário -->
+  <!-- início lista -->
+   <table class="table table-striped container">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td scope="col"><button type="button" class="btn btn-danger">Deletar</button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td scope="col"><button type="button" class="btn btn-danger">Deletar</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+      <td scope="col"><button type="button" class="btn btn-danger">Deletar</button></td>
+    </tr>
+  </tbody>
+</table>
+  <!-- final lista -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
