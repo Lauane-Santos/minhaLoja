@@ -13,18 +13,23 @@
     <h1>cadastrar user</h1>
     <!-- início formulário -->
   <div class="container">
+    
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Nome</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <form action="/insert_users" method="POST">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" name="nome" id="nome" placeholder="nome">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
     </div>
      <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="senha" class="form-label">Password</label>
+    <input type="password" class="form-control" name="senha" id="senha">
+
+    </div>
+    <button type="submit" class="btn btn-dark">Submit</button>
   </div>
-    <button type="button" class="btn btn-dark">Submit</button>
-  </div>
+    </form>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
